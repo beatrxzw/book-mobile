@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Alura Books</title>
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input class="container__botao" type="checkbox" id="Menu" />
+      <label for="Menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">PROGRAMAÇÃO</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">FRONT-END</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">INFRAESTRUTURA</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">BUSINESS</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">DESIGN & UX</a>
+        </li>
+      </ul>
+      <img class="container__imagem" src="img/Logo.svg" alt="Logo da AluraBooks" />
+    </div>
+
+    <div class="container">
+      <a href="#"><img class="container__imagem" src="img/Favoritos.svg" alt="Favoritos" /></a>
+      <a href="#"><img class="container__imagem" src="img/Compras.svg" alt="Comprar" /></a>
+      <a href="#"><img class="container__imagem" src="/img/Usuario.svg" alt="Usuários" /></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">
+      Encontre em nossa estante o que precisa para seu desenvolvimento!
+    </p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?" />
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+
+        <div class="swiper-slide">
+          <img src="img/ApacheKafka.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Guia Front-end.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Javascript.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Portugol.svg" alt="" />
+        </div>
+        <div class="swiper-slide"><img src="img/Tuning.svg" alt="" /></div>
+        <div class="swiper-slide">
+          <img src="img/Liderança.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+
+    <div class="card">
+      <div class="card__content">
+        <div class="card__content-right">
+          <h3 class="content-right__title">Talvez você também se interesse por...</h3>
+          <h2 class="content-right__books">Angular 11 e Firebase</h2>
+          <p class="content-right__text">Construindo uma aplicação integrada com a plataforma do Google.</p>
+          <a href="#" class="icons__right">
+            <img src="/img/Favoritos.svg" alt="">
+            <img src="/img/Compras.svg" alt="">
+          </a>
+        </div>
+        <div class="card__content-left">
+          <img class="angular__left" src="/img/Angular.svg" alt="">
+          <a href="" class="botao__left">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
