@@ -28,24 +28,24 @@
     border-radius: 10px;
     padding: 1em;
     margin: 1em 1em;
-} 
+}
 
-.card__content{
+.card__content {
     display: flex;
     align-items: flex-start;
     justify-content: center;
 
-    
+
 }
 
-.card__content-right{
+.card__content-right {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    
+
 }
 
-.content-right__title{
+.content-right__title {
     font-weight: 700;
     font-size: 16px;
     color: var(--laranja);
@@ -53,13 +53,13 @@
     width: 179px;
 }
 
-.content-right__books{
+.content-right__books {
     font-weight: 700;
     font-size: 18px;
     line-height: 27px;
 }
 
-.content-right__text{
+.content-right__text {
     color: var(--preto);
     width: 148px;
     font-size: 14px;
@@ -67,32 +67,64 @@
 }
 
 
-.icons__right{
+.icons__right {
     display: flex;
-   align-items: center;
-    gap: 1.5em;
+    align-items: center;
+    gap: 4px;
     margin: 6px 0 23px 0;
 
 }
 
-.card__content-left{
+.card__content-left {
     display: flex;
-    flex-direction: column; 
-    
+    flex-direction: column;
+
 }
 
-.angular__left{
+.angular__left {
     width: 162px;
     height: 168px;
     margin-bottom: 35px;
 }
 
-.botao__left{
+.botao__left {
     font-weight: 700;
     color: var(--branco);
     background: var(--laranja);
     text-decoration: none;
     padding: 1em 2em;
     text-align: center;
+    margin-bottom: 19px;
 }
 
+.mais__vendidos {
+    color: var(--laranja);
+    background: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 1em 0;
+}
+
+
+
+.content-right__text-second{
+    color: var(--preto);
+    width: 148px;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 30px;
+}
+
+
+.icons__right-second {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    gap: 4px;
+
+
+}
